@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="incidentreport.css">
+
+  </head>
+
+<!--- sticky header -->
+<header class="sticky">
+  <div class="logo-container">
+     <span class="arrow" href="previouspage">&lt;</span>
+    <img class="logo" src="url" alt="logo">
+  </div>
+
+  <nav>
+    <strong>
+    <a href="home"> home </a>
+    <a href="viewreports"> view report </a>
+    <a href="aboutus"> about us </a>
+    <a href="contactus"> contact us </a>
+    </strong>
+  </nav>
+</header>
+
+
+  <body>
+   
+    <h1 id="submitanincident"> Submit an Incident</h1>
+
+    <div class="forms">
+        <div class="left">
+        <!-- What Happened?-->
+        <label class="labeltext" for="incident-type">What Happened?</label>
+        <select id="selection-type" name="incident-type" required>
+          <option value="" disabled selected>Select Incident Type...</option>
+
+          <!-- Safety & Security -->
+          <optgroup label="Safety & Security">
+            <option value="accident">Accident / Collision</option>
+            <option value="crime">Crime-Related (e.g., theft, holdup)</option>
+            <option value="disruptive-behavior">Disruptive / Aggressive Behavior</option>
+          </optgroup>
+
+          <!-- Service & Operations -->
+          <optgroup label="Service & Operations">
+            <option value="delay">Delay / Trip Interruption</option>
+            <option value="overcharging">Overcharging / Fare Dispute</option>
+            <option value="traffic-violation">Violation of Traffic Laws</option>
+            <option value="equipment-concerns">Vehicular Equipment Concerns</option>
+          </optgroup>
+        </select>
+
+        <br>
+
+        <!-- Transportation Type -->
+        <label class="labeltext" for="vehicle-type">Form of Transportation</label>
+          <select id="selection-type" name="vehicle-type" required>
+            <option value="" disabled selected>Select Transportation...</option>
+            <option value="bus">Bus</option>
+            <option value="jeepney">Jeepney</option>
+            <option value="train">Train</option>
+            <option value="taxi">Taxi </option>
+            <option value="tricycle">Tricycle</option>
+            <option value="UV">UV Express</option>
+            <option value="Transportation Service">Online-Enabled Transportation Service (Grab, Angkas, Indrive, etc...)</option>
+            <option value="walking"> None (Walking) </option>
+          </select>
+          
+
+          <!-- Location -->
+        <label class="labeltext" for="location"> Location of Incident </label></label>
+          <select id="selection-type" name="location" required>
+            <option value="" disabled selected>Select Location...</option>
+        </select>
+
+        <!-- Date and Time -->
+        <form>
+        <label class="labeltext" for="date_time">Date and Time of Incident</label>
+        <br>
+        <input type="datetime-local" name="date_time"  id="selection-type">
+        </div>
+
+        <div class="right">
+        <!-- Photo Evidence -->
+        <form>
+        <label class="labeltext" for="photo_evidence">Photo Evidence</label>
+        <br>
+        <input type="file" id="photo" name="photo">
+
+        <!-- Photo Evidence -->
+        <form>
+        <label class="labeltext" for="photo_evidence">Description Of Incident</label>
+        <br>
+        ​<textarea class="labeltext" rows="10" cols="50"></textarea>
+
+        <!-- Submit -->
+        <form>
+        <br>
+        <button class="submit"> Submit </button>
+        </div>
+    </div>
+  
+  </body>
+</html>
