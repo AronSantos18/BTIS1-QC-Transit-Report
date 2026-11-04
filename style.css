@@ -1,0 +1,73 @@
+body {
+  background: #F1FAEE;
+}
+.header {
+  background: #1B3A57;
+}
+.header .navbar-brand,
+.header .nav-link,
+.header .bi-bell {
+  color: #F1FAEE;
+}
+
+.header .bi-bell {
+  display: none;
+}
+.header .nav-link {
+  text-decoration: underline;
+}
+.header .nav-link:hover {
+  color: #A8DADC;
+}
+.logo-box {
+  width: 45px;
+  height: 45px;
+  border: 3px solid #F1FAEE;
+}
+.profile {
+  width: 40px;
+  height: 40px;
+  border: 2px solid #F1FAEE;
+  border-radius: 50%;
+}
+.title {
+  font-size: 4rem;
+  font-weight: 700;
+  color: #1B3A57;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  background: #fff;
+  border: 2px solid #1B3A57;
+  padding: 40px 10px;
+  text-align: center;
+  font-weight: 700;
+  color: #1B3A57;
+  text-decoration: none;
+}
+.box i {
+  display: block;
+  font-size: 2rem;
+  color: #457B9D;
+}
+.box:hover {
+  background: #A8DADC;
+  border-color: #9B1B30;
+  color: #1B3A57;
+}
+.box:hover  {
+  color: #9B1B30;
+}
+.footer {
+  background: #1B3A57;
+
+}
+
+.box.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+}
