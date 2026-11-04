@@ -137,6 +137,20 @@ textarea {
   gap: 250px;
 }
 
+@media (max-width: 768px)
+{
+  .grid-container {
+
+    grid-template-columns: 1fr;
+  }
+
+  .forms {
+
+    flex-direction:  column;
+    gap: 20px;
+  }
+}
+
 .left {
 
   float: left
