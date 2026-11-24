@@ -1,0 +1,238 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F1FAEE;
+  position: relative;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("https://www.dmcihomes.com/uploads/optimized/A-bird-s-eye-view-of-the-MRT-7-Tandang-Sora-Station-under-construction-along-Commonwealth-Avenue-in-Quezon-City-just-steps-from-The-Erin-Heights-taken-in-February-2025-68a2e4ff1244a.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+footer,
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 62px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Tahoma, sans-serif;
+  background-color: #1B3A57;
+  border: 2px solid #1B3A57;
+}
+
+nav a {
+  color: white;
+  margin-left: 35px;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.arrow {
+  display: inline-block;
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+#contactus {
+  text-align: left;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 44px;
+  padding: 0 5%;
+  margin: 60px auto 0;
+  margin-top: 5px;
+}
+
+#directory {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 15px;
+  margin-left: 5%;
+  margin-top: 50px;
+
+}
+
+.main-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8vw;
+  margin: 40px auto;
+  padding: 0 5%;
+}
+
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  margin: 0;
+  padding: 0;
+}
+
+.labeltext {
+  font-family: 'Varela Round', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+}
+
+textarea, input[type="text"], input[type="email"], select {
+  width: 100%;
+  height: 59px;
+  font-size: 16px;
+  padding: 0 16px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+#message {
+  width: 100%;
+  height: 246px;
+  font-size: 16px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: white;
+  margin-bottom: 25px;
+  vertical-align: top;
+}
+
+#submit-button button {
+  width: 100%;
+  max-width: 251px;
+  height: 63px;
+  background-color: #9B1B30;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.side-boxes {
+  display: flex;
+  flex-direction: column;
+  flex: 0 1 569px;
+  width: 100%;
+  max-width: 569px;
+  margin-left: 0;
+  padding: 45px 43px 26px;
+  background-color: rgba(248, 248, 255, 0.5);
+  border-radius: 24px;
+}
+
+#emergency-number {
+  background: white;
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+  min-height: 88px;
+  font-size: 15px;
+  padding: 10px 15px;
+  border-radius: 8px;
+  border: 2px dashed #333;
+  margin: 0 0 30px 0;
+  display: flex;
+  align-items: center;
+}
+
+#other-ways {
+  background-color: #9B1B30;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+  min-height: 169px;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 0 0 27px 0;
+}
+
+#office-map {
+  width: 100%;
+  height: 273px;
+  border-radius: 8px;
+  margin: 0;
+  display: block;
+  margin-bottom: 20px;
+  object-fit: cover;
+}
+
+.form-row {
+  display: flex;
+  gap: 38px;
+  align-items: flex-start;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    flex-direction: column;
+    margin: 50px 20px;
+    padding: 0 10px;
+    gap: 20px;
+  }
+
+  .contact-form,
+  .side-boxes {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  #contactus {
+    margin: 40px 20px 0;
+    padding: 0 10px;
+  }
+
+  nav a {
+    margin-left: 15px;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#contactus,
+.main-container {
+  width: 100%;
+}
+
+footer {
+  position: static;
+  margin-top: auto;
+  flex-shrink: 0;
+  width: 100%;
+}
